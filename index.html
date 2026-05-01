@@ -6,59 +6,124 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
       margin: 0;
-      background: #f4f6f8;
+      background: linear-gradient(135deg, #eef2ff, #f8fafc);
+      color: #1e293b;
     }
 
     header {
-      background: #2c3e50;
-      color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 60px 20px 40px;
+      background: linear-gradient(135deg, #c7d2fe, #e0f2fe);
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    header h3 {
+      margin-top: 10px;
+      font-weight: 400;
+      color: #475569;
+    }
+
+    .tagline {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #64748b;
     }
 
     .container {
       width: 85%;
+      max-width: 1000px;
       margin: auto;
-      padding: 20px;
+      padding: 30px 0;
     }
 
     .card {
-      background: white;
-      padding: 20px;
+      background: #ffffffcc;
+      backdrop-filter: blur(10px);
+      padding: 25px;
       margin: 20px 0;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 14px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+      transition: 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.06);
     }
 
     h2 {
-      color: #2c3e50;
+      margin-top: 0;
+      font-size: 22px;
+      color: #1e293b;
     }
 
     .blog {
-      text-align: left;
-      line-height: 1.6;
+      line-height: 1.7;
+      color: #334155;
     }
 
-    a.button {
-      display: inline-block;
-      padding: 12px 20px;
-      background: #3498db;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
+    .skills {
       margin-top: 10px;
+      font-size: 14px;
+      color: #475569;
     }
+
+    .skills span {
+      margin-right: 10px;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      background: linear-gradient(135deg, #6366f1, #3b82f6);
+      color: white;
+      border-radius: 8px;
+      margin-top: 15px;
+      font-weight: 500;
+      transition: 0.2s ease;
+    }
+
+    .button:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #64748b;
+      padding: 20px;
+    }
+
   </style>
 </head>
 
 <body>
 
 <header>
-  <img src="profile.jpg" alt="Vishwas Guduru" style="width:120px; height:120px; border-radius:50%; border:3px solid white; margin-bottom:10px;">
   <h1>Vishwas Guduru</h1>
-  <h3>Senior QA Engineer | Automation | API | Performance Testing</h3>
+  <h3>Senior QA Engineer</h3>
+  <div class="tagline">
+    Building scalable, reliable, and data-driven quality engineering solutions across global platforms
+  </div>
 </header>
 
 <div class="container">
@@ -67,46 +132,45 @@
     <h2>About Me</h2>
     <p>
       Senior QA Engineer with 6+ years of experience in insurance and claims platforms.
-      Passionate about automation, quality engineering, and improving system reliability.
+      Focused on automation, quality engineering, and improving system reliability across global products.
     </p>
+
+    <div class="skills">
+      <span>Automation</span> |
+      <span>API Testing</span> |
+      <span>Performance</span> |
+      <span>Playwright</span> |
+      <span>JMeter</span> |
+      <span>AI-assisted Testing</span>
+    </div>
   </div>
 
   <div class="card blog">
-    <h2>My QA Journey (2019 – Present)</h2>
+    <h2>My QA Journey</h2>
 
     <p>
-      I started my QA journey in 2019 with a simple role — executing test cases and reporting defects.
-      But over time, I realized QA is much more than that.
+      I started my QA journey in 2019 with test execution and defect reporting. Over time,
+      I realized QA is not just about validation — it’s about prevention and system reliability.
     </p>
 
     <p>
-      From manual testing to automation, from API validation to performance testing, my journey has been about continuous learning and growth.
-      I worked across global projects including the UK, US, Germany, and Spain, gaining strong domain expertise in insurance and claims systems.
+      My experience spans manual, automation, API, and performance testing across global platforms
+      in the UK, US, Germany, and Spain.
     </p>
 
     <p>
-      One of the biggest shifts in my career came when I started handling UAT and production support.
-      Working on real production issues (P0–P3 incidents) taught me how critical quality is in live systems.
+      Handling UAT and production incidents (P0–P3) helped me understand real-world impact,
+      pushing me toward stronger automation and smarter testing strategies.
     </p>
 
     <p>
-      Instead of just fixing issues, I began analyzing patterns — why defects occur, how they can be prevented, and how testing can be improved.
-      This led me to strengthen automation and build better regression strategies.
-    </p>
-
-    <p>
-      As a Senior QA Engineer, I now focus on guiding automation strategy, prioritizing high-impact areas, and aligning QA efforts with business goals.
-      I also explored AI-based defect management to improve efficiency and reporting.
-    </p>
-
-    <p>
-      Today, QA for me is about ownership, prevention, and delivering reliable systems — not just testing.
+      Today, I focus on automation strategy, risk-based testing, and aligning QA with business goals.
     </p>
 
   </div>
 
   <div class="card">
-    <h2>Connect with Me</h2>
+    <h2>Connect</h2>
 
     <p>Email: <a href="mailto:raogvg@gmail.com">raogvg@gmail.com</a></p>
     <p>Phone: <a href="tel:+918978422260">+91 89784 22260</a></p>
@@ -115,13 +179,13 @@
       Connect on LinkedIn
     </a>
 
-    <p style="margin-top:15px;">
-      Feel free to connect for discussions on QA, automation, or opportunities.
-    </p>
-
   </div>
 
 </div>
+
+<footer>
+  © 2026 Vishwas Guduru — QA Portfolio
+</footer>
 
 </body>
 </html>
